@@ -11,6 +11,7 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Dinnig from './components/Dinnig/Dinnig';
 import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Register></Register>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );

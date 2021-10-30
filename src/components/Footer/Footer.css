@@ -1,0 +1,15 @@
+.footer{
+    background-color: darkgray;
+    color: honeydew;
+}
+.footer-title{
+    color: rgb(243, 243, 243);
+}
+.footer-right ul{
+    list-style: none;
+    color: rgb(243, 243, 243);
+
+}
+.footer-right{
+    margin-bottom: 5px;
+}

@@ -1,0 +1,19 @@
+.ic-sec{
+    height: 550px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+}
+.ic-img img{
+    height: 400px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+}
+.ic-det{
+    background-color: white;
+    height: 300px;
+    padding: 40px;
+    margin-left: -50px;
+    margin-top: 60px;
+    box-shadow: 8px 8px 40px 5px rgb(0 0 0 / 8%);
+    border-radius: 10px;
+}
