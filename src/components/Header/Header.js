@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAthentication from '../Hooks/useAthentication';
 
 const Header = () => {
+  const {user , logOut} = useAthentication();
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,6 +29,14 @@ const Header = () => {
         <li className="nav-item">
           <Link className="nav-link" to='register'>REGISTER</Link>
         </li>
+        {
+          user.email && <div>
+            <h6 className='mt-2 ms-2'>Welcome, {user.displayName}</h6>
+            <div className='text-end'>
+            <button className='btn btn-danger' onClick={logOut}>Log out</button>
+            </div>
+          </div>
+        }
       </ul>
     </div>
   </div>

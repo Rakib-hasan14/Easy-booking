@@ -12,10 +12,12 @@ import Register from './components/Register/Register';
 import Dinnig from './components/Dinnig/Dinnig';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
+import AuthProvider from './components/Context/AuthContext';
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
         <Header></Header>
         <Switch>
@@ -40,6 +42,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
+      </AuthProvider>
     </div>
   );
 }
