@@ -33,6 +33,9 @@ function App() {
           <Route path='/dinnig'>
             <Dinnig></Dinnig>
           </Route>
+          <Route path='/dashboard'>
+            <Dinnig></Dinnig>
+          </Route>
           <Route path='/login'>
             <Login></Login>
           </Route>

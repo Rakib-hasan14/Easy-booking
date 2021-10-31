@@ -1,0 +1,20 @@
+.web-banner{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_grF9sk4c2W8S89wxSsUoFnz7ngOyQXTQFg&usqp=CAU');
+        background-size: cover;
+        background-position: center;
+        padding: 150px 150px;
+        position: relative;
+        position: sticky;
+    }
+.web-banner::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #29b49bad;
+        background-image: linear-gradient(to-left , rgba(0,0,0,0,1), #42cfb577  );
+        z-index: -1;
+        display: block;
+    }

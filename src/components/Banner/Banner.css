@@ -2,12 +2,10 @@
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvhABKa2zMwJ8gUFXI24viKCejNDmUP0R7wg&usqp=CAU');
     background-size: cover;
     background-position: center;
+    padding: 150px 150px;
+    position: relative;
+    position: sticky;
     color: white;
-    padding: 200px;
-    font-weight: bold;
-    position: absolute;
-    width: 100%;
-    z-index: 111;
 }
 .banner::after{
     content: '';
