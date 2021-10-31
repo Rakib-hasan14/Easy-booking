@@ -13,6 +13,10 @@ import Dinnig from './components/Dinnig/Dinnig';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import AuthProvider from './components/Context/AuthContext';
+import Dashboard from './components/Dashboard/Dashboard/Dashboard';
+import MyOrder from './components/Dashboard/MyOrder/MyOrder';
+import AddNewService from './components/Dashboard/AddNewService/AddNewService';
+import AllBooking from './components/Dashboard/AllBooking/AllBooking';
 
 function App() {
   return (
@@ -33,8 +37,17 @@ function App() {
           <Route path='/dinnig'>
             <Dinnig></Dinnig>
           </Route>
-          <Route path='/dashboard'>
-            <Dinnig></Dinnig>
+          <Route exact path='/dashboard'>
+            <Dashboard></Dashboard>
+          </Route>
+          <Route exact path='/dashboard/myorders'>
+            <MyOrder></MyOrder>
+          </Route>
+          <Route exact path='/dashboard/managebooking'>
+            <AllBooking></AllBooking>
+          </Route>
+          <Route exact path='/dashboard/newservice'>
+            <AddNewService></AddNewService>
           </Route>
           <Route path='/login'>
             <Login></Login>

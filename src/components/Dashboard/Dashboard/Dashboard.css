@@ -1,0 +1,11 @@
+.dashItem{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 15px;
+}
+.dashText{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
