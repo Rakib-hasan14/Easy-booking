@@ -11,8 +11,12 @@ const Hotels = () => {
     }, [])
     return (
         <div className='my-5'>
+            
             <h1 className='text-center web-text'>BOOK NOW</h1>
 
+            {/* Spinner */}
+            {hotels.length< 1 && <div class="spinner-border text-secondary text-center d-block mt-4 mx-auto" role="status">
+            </div> }
             <div className="grid container my-5">
             {
                 hotels.map(hotel => <Hotel

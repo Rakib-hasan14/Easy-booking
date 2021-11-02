@@ -17,6 +17,8 @@ import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import MyOrder from './components/Dashboard/MyOrder/MyOrder';
 import AddNewService from './components/Dashboard/AddNewService/AddNewService';
 import AllBooking from './components/Dashboard/AllBooking/AllBooking';
+import BookingPage from './components/BookingPage/BookingPage';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -55,6 +57,9 @@ function App() {
           <Route path='/register'>
             <Register></Register>
           </Route>
+          <PrivateRoute exact path='/hotels/:id'>
+            <BookingPage></BookingPage>
+          </PrivateRoute>
         </Switch>
         <Footer></Footer>
       </Router>

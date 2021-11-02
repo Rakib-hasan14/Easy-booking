@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ManageOrder = () => {
+    
     return (
         <div>
-            <h1>RThis is manage orders</h1>
+            
         </div>
     );
 };
