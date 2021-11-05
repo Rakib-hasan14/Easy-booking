@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router';
+import './addNewService.css'
 
 const AddNewService = () => {
     const axios = require('axios');
@@ -49,7 +50,7 @@ const AddNewService = () => {
     }
     return (
         <div className='web-text text-center my-3'>
-            <h1>Add new services</h1>
+            <h1 className='res-margin'>Add new services</h1>
             <form className='fw-bold' onSubmit={addHotel}>
                 <label>Hotel name </label>
                 <input className='mb-2  ms-2' type="text"  placeholder=' Hotel Name' onChange={getName}/>

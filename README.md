@@ -10,14 +10,7 @@
 update: At the time of placing an order, every order will have a default status: pending. On the Manage All Orders page, you will be able to update the status of the pending to approved status. This could be a simple button to update the pending status. (don't over think, this is a simple button to update the status field of an order. Use Id to find the order and set the status to approved)
 
 Make the website responsive. Make sure the site looks different on desktop and mobile responsive. Tablet responsive is optional
-
-Make the website meaningful and consistent in look and feel. Give your website a relevant name. Images and all the content of the website has to be relevant. No lorem ipsum please.
-
-Clean and organized Code. Organize components and add comments when needed
-
-Add a loading spinner on the home page, if data is loading a spinner will be displayed.
-
-use .env file to hide db user and password and also use .gitignore file -->
+ -->
 
 
 

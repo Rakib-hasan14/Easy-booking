@@ -18,3 +18,9 @@
     z-index: -1;
     display: block;
 }
+
+@media screen and (max-width: 500px) {
+    .banner{
+        padding: 100px 25px;
+    }
+}

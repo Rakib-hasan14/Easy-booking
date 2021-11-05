@@ -1,0 +1,5 @@
+@media screen and (max-width: 500px) {
+    .order-div{
+        width: 80%!important;
+    }
+}

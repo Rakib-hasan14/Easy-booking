@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useAthentication from '../../Hooks/useAthentication';
+import './MyOrder.css'
 
 const MyOrder = () => {
     const  [order , setOrders] = useState([]);
@@ -20,12 +21,12 @@ const MyOrder = () => {
 
     console.log(order)
     useEffect(()=> {
-        const mainOrder = order.find(md => md.name ===user.displayName)
+        const mainOrder = order.find(md => md.email ===user.email)
         setDetails(mainOrder);
         
     },[order])
 
-    const { name , date , day , email , _id} = details || extraDB;
+    const { name , date , day  , _id , status} = details || extraDB;
     
     //Delete from Db
     const handleDelete = (id) => {
@@ -45,13 +46,14 @@ const MyOrder = () => {
         }
     }
     return (
-        <div className='bg-danger text-white my-5 text-center w-50 mx-auto border-top border-bottom p-3 rounded'>
+        <div className='order-div bg-danger text-white my-5 text-center w-50 mx-auto border-top border-bottom p-3 rounded'>
             { name ? <div>
                 <h2>Your Booking</h2>
             <h6 className='mt-3'>Name: {name || ''}</h6>
             <h6 className='mt-3'>Your order number: {_id}</h6>
             <p>For: {day} days</p>
             <p>Chechout: {date}</p>
+            <h6>Status: {status}</h6>
             <button onClick={()=> handleDelete(_id)} className='web-btn'>Cancal Booking</button>
             </div> : <div className='bg-danger text-white my-5 text-center w-50 mx-auto border-top border-bottom p-3 rounded'>
                 No Booking

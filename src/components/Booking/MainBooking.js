@@ -1,6 +1,7 @@
 import React, { useRef , useState} from 'react';
 import { useHistory } from 'react-router';
 import useAthentication from '../Hooks/useAthentication';
+import './MainBooking.css'
 
 const MainBooking = () => {
     const axios = require('axios');
@@ -40,7 +41,8 @@ const MainBooking = () => {
             email: email,
             phone: phone,
             day: day,
-            date: date
+            date: date,
+            status: 'Pending'
         }
           console.log(data)
          axios.post('http://localhost:5000/bookings', data)
@@ -55,7 +57,7 @@ const MainBooking = () => {
     }
     return (
         <div className='my-5'>
-            <h1 className="web-text text-center my-4">Booking Information</h1>
+            <h1 className="web-text text-center my-4 res-title">Booking Information</h1>
             <form className='shippingForm text-center' onSubmit={sendData}>
                 <label className='fw-bold me-2'>Name: </label>
                 <input className='w-25 border-secondary rounded mb-2'  type="text" value={user.displayName} ref={userName} readOnly/>

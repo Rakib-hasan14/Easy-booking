@@ -17,3 +17,24 @@
     box-shadow: 8px 8px 40px 5px rgb(0 0 0 / 8%);
     border-radius: 10px;
 }
+
+@media screen and (max-width: 500px) {
+    .ic-sec{
+            flex-direction: column;
+            height: 100%;
+        }
+    .ic-img{
+            width: 80%!important;
+            margin: 20px auto;
+            border-radius: 10px;
+    }
+    .ic-img img{
+        border-radius: 10px;
+    }
+    .ic-det{
+        width: 80%!important;
+        height: 100%;
+        margin: 17px auto;
+        text-align: center;
+    }
+}

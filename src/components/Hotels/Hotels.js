@@ -15,7 +15,7 @@ const Hotels = () => {
             <h1 className='text-center web-text'>BOOK NOW</h1>
 
             {/* Spinner */}
-            {hotels.length< 1 && <div class="spinner-border text-secondary text-center d-block mt-4 mx-auto" role="status">
+            {hotels.length< 1 && <div className="spinner-border text-secondary text-center d-block mt-4 mx-auto" role="status">
             </div> }
             <div className="grid container my-5">
             {

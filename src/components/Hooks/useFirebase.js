@@ -1,4 +1,3 @@
-import React from 'react';
 import Athentication from '../Firebase/firebase.init';
 import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
 import { useState } from "react";

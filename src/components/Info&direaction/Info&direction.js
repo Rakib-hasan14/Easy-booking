@@ -9,7 +9,7 @@ const Infodirection = () => {
         </div>
         <div>
             <div className="text-center web-text my-5">
-                <h1>DIRECTIONS FROM OUR FAVORITE DESTINATIONS</h1>
+                <h1 className='banner-title'>DIRECTIONS FROM OUR FAVORITE DESTINATIONS</h1>
                 <div className='text-secondary'>
                     <p className='mb-1 mt-3'>Postcard Hotel</p>
                     <p className='mb-1'>35 Piazza San Marco</p>

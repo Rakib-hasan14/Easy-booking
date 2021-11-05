@@ -1,3 +1,12 @@
 .web-text{
   color: teal;
 }
+
+@media screen and (max-width: 500px) {
+  .web-text {
+    font-size: 30px;
+  }
+  .secondaray-web-text{
+    font-size: 14px;
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Dinning.css'
 
 const Dinnig = () => {
     return (
@@ -6,8 +7,8 @@ const Dinnig = () => {
             <div className='web-banner text-center text-white'>
             <h1>DINNIG</h1>
             </div>
-            <div className="text-secondary fw-bold text-center my-5 w-50 mx-auto py-3">
-                <h6>A favorite haunt for savvy locals and refined travelers alike, the Postcard boasts diverse options for dining and cocktails. Chef John Doe presents a menu of luxury comfort fare and innovative creations. Whatever your delight, the highest standards are our standards at Postcard.</h6>
+            <div className="text-secondary fw-bold text-center my-5 w-50 mx-auto py-3 dinning-top">
+                <h6 className=''>A favorite haunt for savvy locals and refined travelers alike, the Postcard boasts diverse options for dining and cocktails. Chef John Doe presents a menu of luxury comfort fare and innovative creations. Whatever your delight, the highest standards are our standards at Postcard.</h6>
                 <div className="mt-5 text-secondary border-top pt-5">
                 <p>CHEF'S SPECIALS </p>
                 <h2>UNIQUE SIGNATURE DISHES</h2>

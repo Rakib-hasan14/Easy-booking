@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+    .res-all-order{
+        display: flex!important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .res-all-order h6{
+        width: 80%!important;
+        margin-bottom: 14px;
+    }
+}

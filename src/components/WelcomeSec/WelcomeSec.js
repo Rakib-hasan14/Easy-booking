@@ -7,7 +7,7 @@ const WelcomeSec = () => {
         <div className='py-5 text-center '>
             <div className='mx-auto w-75'>
             <h1 className='web-text'>WELCOME TO THE POSTCARD HOTEL</h1>
-            <h5>Our rooms are designed to transport you into an environment made for leisure. Style, space and architectural designs for a perfect hotel lifestyle.</h5>
+            <h5 className='secondaray-web-text'>Our rooms are designed to transport you into an environment made for leisure. Style, space and architectural designs for a perfect hotel lifestyle.</h5>
             </div>
             <div className="my-5 container">
                 <div className='grid-img'>
