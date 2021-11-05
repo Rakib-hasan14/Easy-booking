@@ -4,7 +4,7 @@ import SingleBooking from '../SingleBooking/SingleBooking';
 const AllBooking = () => {
     const  [order , setOrders] = useState([]);
      useEffect(()=> {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://evening-lake-49300.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => {
              setOrders(data)

@@ -6,7 +6,7 @@ const BookingPage = () => {
     const {id} = useParams()
     const [hotel , setHotels] = useState({})
     useEffect(()=> {
-        fetch(`http://localhost:5000/hotels/${id}`)
+        fetch(`https://evening-lake-49300.herokuapp.com/hotels/${id}`)
         .then(res => res.json())
         .then(data => setHotels(data))
     }, [])

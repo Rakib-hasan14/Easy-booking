@@ -45,7 +45,7 @@ const MainBooking = () => {
             status: 'Pending'
         }
           console.log(data)
-         axios.post('http://localhost:5000/bookings', data)
+         axios.post('https://evening-lake-49300.herokuapp.com/bookings', data)
           .then(res => {
             if(res.data.insertedId){
                   alert('Successfully Booking. Thank You!')

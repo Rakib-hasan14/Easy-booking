@@ -7,7 +7,7 @@ const MyOrder = () => {
     const [details , setDetails] = useState({})
     const {user} = useAthentication()
      useEffect(()=> {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://evening-lake-49300.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => {
              setOrders(data)
@@ -32,7 +32,7 @@ const MyOrder = () => {
     const handleDelete = (id) => {
         const corfirmation = window.confirm('Are you sure to cancal your Booking ?');
         if (corfirmation) {
-            fetch(`http://localhost:5000/bookings/${id}`, {
+            fetch(`https://evening-lake-49300.herokuapp.com/bookings/${id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())

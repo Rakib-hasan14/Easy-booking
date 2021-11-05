@@ -38,7 +38,7 @@ const AddNewService = () => {
             details: details
         }
           console.log(data)
-         axios.post('http://localhost:5000/hotels', data)
+         axios.post('https://evening-lake-49300.herokuapp.com/hotels', data)
           .then(res => {
             if(res.data.insertedId){
                   alert('Successfully Added. Thank You!')

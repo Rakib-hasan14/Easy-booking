@@ -9,7 +9,7 @@ const SingleBooking = ({SingleOrder}) => {
     // Update Status
     const handleStatus = (id) => {
         const approved = {status: 'Approved'}
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://evening-lake-49300.herokuapp.com/bookings/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -30,7 +30,7 @@ const SingleBooking = ({SingleOrder}) => {
     const handleDelete = (id) => {
         const corfirmation = window.confirm('Are you sure to Delete this Booking ?');
         if (corfirmation) {
-            fetch(`http://localhost:5000/bookings/${id}`, {
+            fetch(`https://evening-lake-49300.herokuapp.com/bookings/${id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())
