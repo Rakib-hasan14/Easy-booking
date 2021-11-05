@@ -1,24 +1,9 @@
-<!--  
-
-
-
-
-
-<!-- Bonus-------------- -->
-<!-- If you click on the Manage All Orders page, the logged in user will see the orders placed by every users. If multiple users used this website to place orders, everyone's order will be displayed here. and the admin will be able to delete anyone's order here. Also, make sure to add a confirmation before deleting.
-
-update: At the time of placing an order, every order will have a default status: pending. On the Manage All Orders page, you will be able to update the status of the pending to approved status. This could be a simple button to update the pending status. (don't over think, this is a simple button to update the status field of an order. Use Id to find the order and set the status to approved)
-
-Make the website responsive. Make sure the site looks different on desktop and mobile responsive. Tablet responsive is optional
- -->
-
-
 
 # Welcome to our Easy booking website
 
 ## This is very simple to using . This is very easy to booking an website! If you use this one time after you happy with our services.
 
-### Website Link []
+### Website Link [https://easy-booking-69b44.web.app/]
 
 - Here you booking most popular websites of the world!
 - If you dont need booking then after the order you can cancal   your booking!
